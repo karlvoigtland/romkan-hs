@@ -1,22 +1,40 @@
 name:                romkan
 version:             0.1.0.0
-synopsis:            Japanese Romaji <-> Japanese Kana conversion library
-description:         Romkan is a library to convert from Japanese Romaji to Japanese Kana and vice versa.
-                     It is a port of python-romkan (http://www.soimort.org/python-romkan).
+synopsis:	     Japanese Romaji <-> Japanese Kana conversion library
+description:         
+    Romkan is a library to convert from Japanese Romaji to Japanese Kana and vice versa.
+    .
+    This is a port of python-romkan: <http://www.soimort.org/python-romkan>.
 license:             BSD3
 license-file:        LICENSE
 author:              Karl Voigtland
 maintainer:          karl.voigtland@gmail.com
--- copyright:           
+copyright:           Copyright (c) 2014 Karl Voigtland
 category:            Natural Language Processing
 build-type:          Simple
--- extra-source-files:  
 cabal-version:       >=1.10
 
 library
-  -- exposed-modules:     
-  -- other-modules:       
-  -- other-extensions:    
-  build-depends:       base >=4.5 && <4.6
-  -- hs-source-dirs:      
+  exposed-modules:     NLP.Romkan
+  other-modules:       NLP.Romkan.Internal
+  Ghc-options:         -Wall
   default-language:    Haskell2010
+  build-depends:
+        base >= 4.5 && < 5
+      , text
+      , containers
+      , attoparsec
+
+Test-Suite test-romkan
+  type:    exitcode-stdio-1.0
+  main-is:            Tests/Tests.hs
+  default-language:   Haskell2010
+  ghc-options:        -Wall
+  build-depends:
+        base >=4.5 && < 5
+      , text
+      , containers
+      , attoparsec
+      , HUnit
+      , test-framework
+      , test-framework-hunit
