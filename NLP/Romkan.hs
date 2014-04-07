@@ -9,6 +9,7 @@ Stability   : experimental
 Portability : POSIX
 
  Romkan is a library to convert from Japanese Romaji to Japanese Kana and vice versa.
+ Homepage is at <https://github.com/karlvoigtland/romkan-hs>.
  This is a port of python-romkan: <http://www.soimort.org/python-romkan>.
 -}
 

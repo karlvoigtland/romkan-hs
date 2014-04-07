@@ -4,12 +4,15 @@ synopsis:	     Japanese Romaji <-> Japanese Kana conversion library
 description:         
     Romkan is a library to convert from Japanese Romaji to Japanese Kana and vice versa.
     .
+    Homepage is at <https://github.com/karlvoigtland/romkan-hs>.
+    .
     This is a port of python-romkan: <http://www.soimort.org/python-romkan>.
 license:             BSD3
 license-file:        LICENSE
 author:              Karl Voigtland
 maintainer:          karl.voigtland@gmail.com
 copyright:           Copyright (c) 2014 Karl Voigtland
+homepage:            https://github.com/karlvoigtland/romkan-hs
 category:            Natural Language Processing
 build-type:          Simple
 cabal-version:       >=1.10
